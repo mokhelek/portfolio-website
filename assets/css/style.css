@@ -1,0 +1,62 @@
+:root {
+    --white: #ffffff;
+    --gray: #d3d3d3;
+    --purple: #867DD8;
+    --purple-light: #9b92ef;
+    --dark:  #171818;
+  }
+  
+
+
+
+body{
+    background-color: var(--dark) ;
+}
+
+h1{
+    color: var(--white);
+}
+
+#my-name{
+    font-size: 4rem;
+    font-weight: 700;
+    color: var(--white);
+}
+
+.intro-text-container{
+    width: 99%;
+    /* border-left:4px #867DD8 solid;
+    padding-left:2rem; */
+    margin-top: 1rem;
+}
+
+#intro-text{
+    color:var(--gray);
+}
+#cta-button{
+    background-color: var(--purple);
+    border-radius: 0;
+    color: #ffffff;
+}
+#welcome-text{
+    color: var(--purple-light);
+
+}
+
+#hand{
+    width: 30px;
+    height: auto;
+}
+#hero-image{
+    width: 600px !important ;
+    height: auto ;
+}
+
+
+
+/* #####################################################   About Section  ################################################ */
+
+#about-section{
+    background-color: var(--dark);
+    height: 600px;
+}

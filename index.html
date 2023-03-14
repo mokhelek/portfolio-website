@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <title>Mokhele Katleho | Portfolio Website</title>
+  </head>
+
+  <nav
+    class="navbar navbar-expand-lg fixed-top"
+    style="background-color: #171818; height: 75px"
+  >
+    <div></div>
+    <div class="container-fluid" style="width: 90%">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarTogglerDemo03"
+        aria-controls="navbarTogglerDemo03"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <svg
+          style="color: #feee5b"
+          xmlns="http://www.w3.org/2000/svg"
+          width="28"
+          height="28"
+          fill="currentColor "
+          class="bi bi-list"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+          />
+        </svg>
+      </button>
+      <a class="navbar-brand" href="{% url 'main_app:homePage' %}">
+        <h6
+          id="logo"
+          style="
+            color: #867DD8;
+            font-family: monospace;
+            font-size: 1.5rem;
+            font-weight: 500;
+          "
+        >
+          mokhele<span style="color: white">.dev_ </span>
+        </h6>
+      </a>
+
+      <div style="background-color: #171818" class="d-none d-lg-block">
+        <div style="padding-left: 300px">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a style="color: white" class="nav-link" href="#about">About </a>
+            </li>
+            &nbsp;&nbsp;&nbsp;
+            <li class="nav-item">
+              <a style="color: white" class="nav-link" href="#skills">Skills</a>
+            </li>
+            &nbsp;&nbsp;&nbsp;
+            <li class="nav-item">
+              <a style="color: white" class="nav-link" href="#project"
+                >Projects</a
+              >
+            </li>
+            &nbsp;&nbsp;&nbsp;
+            <li class="nav-item">
+              <a style="color: white" class="nav-link" href="#blog">Blog</a>
+            </li>
+            &nbsp;&nbsp;&nbsp;
+            <li class="nav-item">
+              <a style="color: white" class="nav-link" href="#contact"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div
+        class="d-flex justify-content-center navbar-collapse"
+        style="background-color: #171818"
+      >
+        <div id="navbarTogglerDemo03" class="collapse">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a style="color: white" class="nav-link" href="#about">About </a>
+            </li>
+            <li class="nav-item">
+              <a style="color: white" class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a style="color: white" class="nav-link" href="#project"
+                >Projects</a
+              >
+            </li>
+            <li class="nav-item">
+              <a style="color: white" class="nav-link" href="#blog">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a style="color: white" class="nav-link" href="#contact"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <body>
+    <section id="hero-section">
+        <div class="container">
+            <br>
+            <br>
+            <div class="row align-items-center" style="height: 600px;">
+                <div class="col-md-7">
+                
+                    <h6 id="welcome-text" > Hello ! <span ><img id="hand"  src="/assets/images/hand.png" alt=""></span> welcome to my portfolio </h6>
+                    <h1 id="my-name">
+                        Mokhele Katleho
+                    </h1>
+                    <div class="intro-text-container">
+                        <p id="intro-text">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto aperiam, similique, nam sint odio eaque inventore placeat id iste .
+                        </p>
+                    </div>
+
+                    <a id="cta-button" class="btn btn-lg" href="#">
+                        See My Work
+                    </a>
+
+                </div>
+                <div class="col-md-5">
+                    <!-- <img   class="img-fluid" id="hero-image" src="/assets/images/undraw_programming_re_kg9v.svg" alt=""> -->
+
+                    <img class="img-fluid6" id="hero-image"  src="/assets/images/vecteezy_programmer-people-concept-use-laptop-and-programming-code_-removebg-preview.png" alt="">
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- ###################################################    About Section ########################################## -->
+
+    <section id="about-section">
+
+        <div class="container">
+
+            <h2  id="sections" style="margin-left: 5px;color: white;margin-top: 0cm;margin-bottom: 0cm;">About  Me </h2>
+            <div style="width:100px;overflow:hidden">
+              <hr style="color:#867DD8;border: 2px  #867DD8 solid ; opacity: 1;margin:5px ">
+           
+            </div>
+            
+              <p style="margin-left: 5px;color:rgb(215, 215, 215);margin-top: 0cm;margin-bottom: 3px;font-size:1.1rem;">
+                A closer look at my journey in tech
+            </p>
+        </div>
+    
+
+
+    </section>
+
+
+
+
+
+
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
