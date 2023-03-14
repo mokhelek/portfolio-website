@@ -58,5 +58,18 @@ h1{
 
 #about-section{
     background-color: var(--dark);
+    height: 100%;
+}
+.about-text{
+    color:var(--gray);
+    padding-left:3rem;
+    font-size: 1.1rem;
+}
+
+/* #####################################################   Skills Section  ################################################ */
+
+#skills-section{
+    margin-top: 4rem;
+    background-color: var(--dark);
     height: 600px;
 }
