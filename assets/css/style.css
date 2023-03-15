@@ -71,8 +71,57 @@ h1{
 #skills-section{
     margin-top: 4rem;
     background-color: var(--dark);
-    height: 600px;
+    height: 700px;
 }
 #skill-text{
     color:var(--gray);
+}
+
+
+
+/* #####################################################   Projects Section  ################################################ */
+#projects-section{
+    margin-top: 4rem;
+    background-color: var(--dark);
+    height: 100%;
+}
+
+.stack{
+    display:flex;
+}
+#stack-img{
+    width:2rem;
+    margin-right:1rem;
+    margin-top: 1rem;
+    opacity: 0.5;
+}
+
+.project-links{
+    display: flex;
+    margin-top: 1.5rem;
+}
+#project-img{
+    border-radius: 15px;
+}
+#project-link{
+    background-color: #949494 !important;
+    min-width:7rem
+}
+
+#project-description{
+    color: var(--gray);
+    font-size: 1rem;
+}
+.project-container{
+    background-color: #222222;
+    padding: 1.5rem;
+    border-radius: 15px;
+}
+
+/* #####################################################   Blog Section  ################################################ */
+
+#blog-section{
+    margin-top: 4rem;
+    background-color: var(--dark);
+    height: 600px;
 }
