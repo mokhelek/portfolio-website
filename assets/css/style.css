@@ -3,7 +3,7 @@
   --gray: #d3d3d3;
   --purple: #867dd8;
   --purple-light: #9b92ef;
-  --dark: #171818;
+  --dark: #1D1D24;
 }
 
 @media screen and (max-width: 540px) {
@@ -143,6 +143,7 @@ h1 {
 }
 #project-img {
   border-radius: 15px;
+  margin-bottom: 1rem;
 }
 #project-link {
   background-color: #949494 !important;
@@ -152,10 +153,12 @@ h1 {
 #project-description {
   color: var(--gray);
   font-size: 1rem;
+  display: flex;
+  align-items: center;
 }
 .project-container {
-  background-color: #222222;
-  padding: 1.5rem;
+  background-color: #282833;
+  padding: 1rem;
   border-radius: 15px;
 }
 
