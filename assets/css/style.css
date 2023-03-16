@@ -16,6 +16,10 @@
         font-size: 1.5rem;
         margin-right: 15px;
     }
+    #about-img{
+        width:60% !important;
+        margin-bottom: 1.5rem;
+    }
     
 }
 
@@ -96,6 +100,10 @@ h1{
     color:var(--gray);
     padding-left:3rem;
     font-size: 1.1rem;
+}
+#about-img{
+    width:85%;
+    margin-bottom: 1.5rem;
 }
 
 /* #####################################################   Skills Section  ################################################ */
