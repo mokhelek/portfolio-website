@@ -29,6 +29,7 @@
 
 body {
   background-color: var(--dark);
+  overflow-x: hidden;
 }
 
 h1 {
@@ -168,4 +169,19 @@ h1 {
   margin-top: 4rem;
   background-color: var(--dark);
   height: 600px;
+}
+.blog-img img{
+    width:210px;
+}
+
+@media screen and (max-width:650px) {
+    .blog-subtitle{
+        display: none;
+    }
+    .blog-img img{
+        width:130px;
+    }
+    .blog-title{
+        font-size: 1.2rem;
+    }
 }
