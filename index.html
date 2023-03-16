@@ -1,571 +1,938 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
     <title>Mokhele Katleho | Portfolio Website</title>
-</head>
+  </head>
 
-<nav class="navbar navbar-expand-lg fixed-top" style="background-color: #171818; height: 75px">
-    <div></div>
-    <div class="container-fluid" style="width: 90%">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
-            aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-            <svg style="color: #feee5b" xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor "
-                class="bi bi-list" viewBox="0 0 16 16">
-                <path fill-rule="evenodd"
-                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
-            </svg>
-        </button>
-        <a class="navbar-brand" href="{% url 'main_app:homePage' %}">
-            <h6 id="logo" style="
-            color: #867DD8;
+  <nav
+    class="navbar navbar-expand-lg fixed-top"
+    style="background-color: #171818; height: 75px"
+  >
+    
+    <div id="nav-container" class="container-fluid" style="width: 90%">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarTogglerDemo03"
+        aria-controls="navbarTogglerDemo03"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <svg
+          style="color: #6857ff"
+          xmlns="http://www.w3.org/2000/svg"
+          width="28"
+          height="28"
+          fill="currentColor "
+          class="bi bi-list"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+          />
+        </svg>
+      </button>
+      <a class="navbar-brand" href="{% url 'main_app:homePage' %}">
+        <h6
+          id="logo"
+          style="
+            color: #867dd8;
             font-family: monospace;
             font-size: 1.5rem;
             font-weight: 500;
-          ">
-                mokhele<span style="color: white">.dev_ </span>
-            </h6>
-        </a>
+          "
+        >
+          mokhele<span style="color: white">.dev_ </span>
+        </h6>
+      </a>
 
-        <div style="background-color: #171818" class="d-none d-lg-block">
-            <div style="padding-left: 300px">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a style="color: white" class="nav-link" href="#about-section">About </a>
-                    </li>
-                    &nbsp;&nbsp;&nbsp;
-                    <li class="nav-item">
-                        <a style="color: white" class="nav-link" href="#skills-section">Skills</a>
-                    </li>
-                    &nbsp;&nbsp;&nbsp;
-                    <li class="nav-item">
-                        <a style="color: white" class="nav-link" href="#projects-section">Projects</a>
-                    </li>
-                    &nbsp;&nbsp;&nbsp;
-                    <li class="nav-item">
-                        <a style="color: white" class="nav-link" href="#blog">Blog</a>
-                    </li>
-                    &nbsp;&nbsp;&nbsp;
-                    <li class="nav-item">
-                        <a style="color: white" class="nav-link" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
+      <div style="background-color: #171818" class="d-none d-lg-block">
+        <div style="padding-left: 300px">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a style="color: white" class="nav-link" href="#about-section"
+                >About
+              </a>
+            </li>
+            &nbsp;&nbsp;&nbsp;
+            <li class="nav-item">
+              <a style="color: white" class="nav-link" href="#skills-section"
+                >Skills</a
+              >
+            </li>
+            &nbsp;&nbsp;&nbsp;
+            <li class="nav-item">
+              <a style="color: white" class="nav-link" href="#projects-section"
+                >Projects</a
+              >
+            </li>
+            &nbsp;&nbsp;&nbsp;
+            <li class="nav-item">
+              <a style="color: white" class="nav-link" href="#blog">Blog</a>
+            </li>
+            &nbsp;&nbsp;&nbsp;
+            <li class="nav-item">
+              <a style="color: white" class="nav-link" href="#contact"
+                >Contact</a
+              >
+            </li>
+          </ul>
         </div>
+      </div>
 
-        <div class="d-flex justify-content-center navbar-collapse" style="background-color: #171818">
-            <div id="navbarTogglerDemo03" class="collapse">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a style="color: white" class="nav-link" href="#about">About </a>
-                    </li>
-                    <li class="nav-item">
-                        <a style="color: white" class="nav-link" href="#skills">Skills</a>
-                    </li>
-                    <li class="nav-item">
-                        <a style="color: white" class="nav-link" href="#project">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a style="color: white" class="nav-link" href="#blog">Blog</a>
-                    </li>
-                    <li class="nav-item">
-                        <a style="color: white" class="nav-link" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
+      <div
+        class="d-flex justify-content-center navbar-collapse"
+        style="background-color: #171818"
+      >
+        <div id="navbarTogglerDemo03" class="collapse">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a style="color: white" class="nav-link" href="#about">About </a>
+            </li>
+            <li class="nav-item">
+              <a style="color: white" class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a style="color: white" class="nav-link" href="#project"
+                >Projects</a
+              >
+            </li>
+            <li class="nav-item">
+              <a style="color: white" class="nav-link" href="#blog">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a style="color: white" class="nav-link" href="#contact"
+                >Contact</a
+              >
+            </li>
+          </ul>
         </div>
+      </div>
     </div>
-</nav>
+  </nav>
 
-<body>
+  <body>
     <section id="hero-section">
-        <div class="container">
-            <br>
-            <br>
-            <div class="row align-items-center" style="height: 600px;">
-                <div class="col-md-7">
-
-                    <h6 id="welcome-text"> Hello ! <span><img id="hand" src="assets/images/hand.png" alt=""></span>
-                        welcome to my portfolio </h6>
-                    <h1 id="my-name">
-                        Mokhele Katleho
-                    </h1>
-                    <div class="intro-text-container">
-                        <p id="intro-text">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto aperiam, similique, nam sint
-                            odio eaque inventore placeat id iste .
-                        </p>
-                    </div>
-
-                    <a id="cta-button" class="btn btn-lg" href="#">
-                        See My Work
-                    </a>
-                    <a class="btn btn-outline-secondary btn-lg" style="margin-left:1rem;border-radius: 0;" href="#"> Get
-                        In Touch </a>
-
-                </div>
-                <div class="col-md-5">
-                    <!-- <img   class="img-fluid" id="hero-image" src="/assets/images/undraw_programming_re_kg9v.svg" alt=""> -->
-
-                    <img class="img-fluid6" id="hero-image"
-                        src="assets/images/vecteezy_programmer-people-concept-use-laptop-and-programming-code_-removebg-preview.png"
-                        alt="">
-                </div>
+      <div class="container">
+        <br />
+        <br />
+        <div class="row align-items-center" style="height: 600px">
+          <div class="col-lg-7 col-md-12">
+            <h6 id="welcome-text">
+              Hello !
+              <span><img id="hand" src="assets/images/hand.png" alt="" /></span>
+              welcome to my portfolio
+            </h6>
+            <h1 id="my-name">Mokhele Katleho</h1>
+            <div class="intro-text-container">
+              <p id="intro-text">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto
+                aperiam, similique, nam sint odio eaque inventore placeat id
+                iste .
+              </p>
             </div>
-        </div>
 
+            <a id="cta-button" class="btn btn-lg" href="#"> See My Work </a>
+            <a
+              class="btn btn-outline-secondary btn-lg"
+              style="margin-left: 1rem; border-radius: 0"
+              href="#"
+            >
+              Get In Touch
+            </a>
+          </div>
+          <div class="col-lg-5 d-none d-lg-block">
+            <!-- <img   class="img-fluid" id="hero-image" src="/assets/images/undraw_programming_re_kg9v.svg" alt=""> -->
+
+            <img
+              class="img-fluid6"
+              id="hero-image"
+              src="assets/images/vecteezy_programmer-people-concept-use-laptop-and-programming-code_-removebg-preview.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- ###################################################    About Section ########################################## -->
 
     <section id="about-section">
-
-        <div class="container">
-
-            <h2 id="sections" style="margin-left: 5px;color: white;margin-top: 0cm;margin-bottom: 0cm;">About Me </h2>
-            <div style="width:100px;overflow:hidden">
-                <hr style="color:#867DD8;border: 2px  #867DD8 solid ; opacity: 1;margin:5px ">
-            </div>
-
-            <p style="margin-left: 5px;color:rgb(215, 215, 215);margin-top: 0cm;margin-bottom: 3px;font-size:1.1rem;">
-                A closer look at my journey in tech
-            </p>
-            <br>
-            <br>
-            <br>
-            <div class="row align-items-center">
-                <div class="col-md-3">
-                    <img style="border: 3px #6857ff solid;border-radius: 50%;" class="img-fluid"
-                        src="assets/images/profile-pic.png" alt="">
-                </div>
-                <div class="col-md-9 about-text">
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Esse mollitia ipsa illo eaque iusto inventore deserunt labore nobis doloremque qui
-                        corrupti quos asperiores architecto autem maxime saepe facilis, neque quas!labore nobis
-                        doloremque qui
-                        corrupti quos asperiores architecto autem maxime saepe facilis, neque quas! Lorem ipsum dolor
-                        sit amet consectetur adipisicing elit.
-                        Esse mollitia ipsa illo eaque iusto inventore deserunt labore nobis doloremque qui
-                    </p>
-                    <a class="btn btn-md"
-                        style="background-color: #796bf5;color: white;border-radius: 0;margin-bottom: 15px;"
-                        href="#">Download CV</a>
-                    <br>
-                    <div style="width:180px;overflow:hidden">
-                        <hr style="color: #796bf5 ;border: 2px  #796bf5 solid ; opacity: 1;margin:5px ">
-                    </div>
-
-                    <div style="width:130px;overflow:hidden">
-                        <hr style="color: #796bf5 ;border: 2px  #796bf5 solid ; opacity: 1;margin:5px ">
-                    </div>
-
-                    <div style="width:60px;overflow:hidden">
-                        <hr style="color:#867DD8;border: 2px  #867DD8 solid ; opacity: 1;margin:5px ">
-                    </div>
-
-                </div>
-            </div>
+      <div class="container">
+        <h2
+          id="sections"
+          style="
+            margin-left: 5px;
+            color: white;
+            margin-top: 0cm;
+            margin-bottom: 0cm;
+          "
+        >
+          About Me
+        </h2>
+        <div style="width: 100px; overflow: hidden">
+          <hr
+            style="
+              color: #867dd8;
+              border: 2px #867dd8 solid;
+              opacity: 1;
+              margin: 5px;
+            "
+          />
         </div>
 
+        <p
+          style="
+            margin-left: 5px;
+            color: rgb(215, 215, 215);
+            margin-top: 0cm;
+            margin-bottom: 3px;
+            font-size: 1.1rem;
+          "
+        >
+          A closer look at my journey in tech
+        </p>
+        <br />
+        <br />
+        <br />
+        <div class="row align-items-center">
+          <div class="col-md-3">
+            <img
+              style="border: 3px #6857ff solid; border-radius: 50%"
+              class="img-fluid"
+              src="assets/images/profile-pic.png"
+              alt=""
+            />
+          </div>
+          <div class="col-md-9 about-text">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
+              mollitia ipsa illo eaque iusto inventore deserunt labore nobis
+              doloremque qui corrupti quos asperiores architecto autem maxime
+              saepe facilis, neque quas!labore nobis doloremque qui corrupti
+              quos asperiores architecto autem maxime saepe facilis, neque quas!
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
+              mollitia ipsa illo eaque iusto inventore deserunt labore nobis
+              doloremque qui
+            </p>
+            <a
+              class="btn btn-md"
+              style="
+                background-color: #796bf5;
+                color: white;
+                border-radius: 0;
+                margin-bottom: 15px;
+              "
+              href="#"
+              >Download CV</a
+            >
+            <br />
+            <div style="width: 180px; overflow: hidden">
+              <hr
+                style="
+                  color: #796bf5;
+                  border: 2px #796bf5 solid;
+                  opacity: 1;
+                  margin: 5px;
+                "
+              />
+            </div>
+
+            <div style="width: 130px; overflow: hidden">
+              <hr
+                style="
+                  color: #796bf5;
+                  border: 2px #796bf5 solid;
+                  opacity: 1;
+                  margin: 5px;
+                "
+              />
+            </div>
+
+            <div style="width: 60px; overflow: hidden">
+              <hr
+                style="
+                  color: #867dd8;
+                  border: 2px #867dd8 solid;
+                  opacity: 1;
+                  margin: 5px;
+                "
+              />
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- ###################################################    Skills Section ########################################## -->
 
     <section id="skills-section">
-
-        <div class="container">
-            <h2 id="sections" style="margin-left: 5px;color: white;margin-top: 0cm;margin-bottom: 0cm;"> Skills</h2>
-            <div style="width:100px;overflow:hidden">
-                <hr style="color:#867DD8;border: 2px  #867DD8 solid ; opacity: 1;margin:5px ">
-            </div>
-
-            <p style="margin-left: 5px;color:rgb(215, 215, 215);margin-top: 0cm;margin-bottom: 3px;font-size:1.1rem;">
-                A list of my core skills and tools
-            </p>
-
-            <br>
-            <br>
-            <br>
-            <div class="container">
-
-
-                <div class="row">
-                    <div class="col-sm-6">
-                        <div class="row align-items-center">
-                            <div class="col-2">
-                                <img style="opacity: 0.5;" width="80" height="80" class="img-fluid"
-                                    src="assets/images/skills/python.png" alt="">
-                            </div>
-                            <div class="col-10">
-                                <h5 id="skill-text"> Python </h5>
-                                <div class="progress">
-                                    <div class="progress-bar progress-bar-striped progress-bar-animated"
-                                        role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
-                                        style="width: 95%;background-color: #6857ff;"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-6">
-                        <div class="row align-items-center">
-                            <div class="col-2">
-                                <img style="opacity: 0.6;" width="80" height="80" class="img-fluid"
-                                    src="assets/images/skills/linux.png" alt="">
-                            </div>
-                            <div class="col-10">
-                                <h5 id="skill-text"> Linux </h5>
-                                <div class="progress">
-                                    <div class="progress-bar progress-bar-striped progress-bar-animated"
-                                        role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
-                                        style="width: 55%;background-color: #6857ff;"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <br>
-                <br>
-
-
-                <div class="row">
-                    <div class="col-sm-6">
-                        <div class="row align-items-center">
-                            <div class="col-2">
-                                <img style="opacity: 0.5;" width="80" height="80" class="img-fluid"
-                                    src="assets/images/skills/bootstrap.png" alt="">
-                            </div>
-                            <div class="col-10">
-                                <h5 id="skill-text"> Bootstrap </h5>
-                                <div class="progress">
-                                    <div class="progress-bar progress-bar-striped progress-bar-animated"
-                                        role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
-                                        style="width: 95%;background-color: #6857ff;"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-6">
-                        <div class="row align-items-center">
-                            <div class="col-2">
-                                <img style="opacity: 0.6;" width="80" height="80" class="img-fluid"
-                                    src="assets/images/skills/css-3.png" alt="">
-                            </div>
-                            <div class="col-10">
-                                <h5 id="skill-text"> CSS </h5>
-                                <div class="progress">
-                                    <div class="progress-bar progress-bar-striped progress-bar-animated"
-                                        role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
-                                        style="width: 95%;background-color: #6857ff;"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-
-                <br>
-                <div class="row">
-                    <div class="col-sm-6">
-                        <div class="row align-items-center">
-                            <div class="col-2">
-                                <img style="opacity: 0.6;" width="80" height="80" class="img-fluid"
-                                    src="assets/images/skills/django.png" alt="">
-                            </div>
-                            <div class="col-10">
-                                <h5 id="skill-text"> Django </h5>
-                                <div class="progress">
-                                    <div class="progress-bar progress-bar-striped progress-bar-animated"
-                                        role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
-                                        style="width: 85%;background-color: #6857ff;"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-6">
-                        <div class="row align-items-center">
-                            <div class="col-2">
-                                <img style="opacity: 0.6;" width="80" height="80" class="img-fluid"
-                                    src="assets/images/skills/github.png" alt="">
-                            </div>
-                            <div class="col-10">
-                                <h5 id="skill-text"> Github </h5>
-                                <div class="progress">
-                                    <div class="progress-bar progress-bar-striped progress-bar-animated"
-                                        role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
-                                        style="width: 85%;background-color: #6857ff;"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <br>
-                <div class="row">
-                    <div class="col-sm-6">
-                        <div class="row align-items-center">
-                            <div class="col-2">
-                                <img style="opacity: 0.6;" width="80" height="80" class="img-fluid"
-                                    src="assets/images/skills/photoshop.png" alt="">
-                            </div>
-                            <div class="col-10">
-                                <h5 id="skill-text"> Adobe Photoshop </h5>
-                                <div class="progress">
-                                    <div class="progress-bar progress-bar-striped progress-bar-animated"
-                                        role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
-                                        style="width: 70%;background-color: #6857ff;"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-6">
-                        <div class="row align-items-center">
-                            <div class="col-2">
-                                <img width="80" height="80" style="opacity: 0.6;" class="img-fluid"
-                                    src="assets/images/skills/java-script.png" alt="">
-                            </div>
-                            <div class="col-10">
-                                <h5 id="skill-text"> Javascript </h5>
-                                <div class="progress">
-                                    <div class="progress-bar progress-bar-striped progress-bar-animated"
-                                        role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
-                                        style="width: 60%;background-color: #6857ff;"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <br>
-                <div class="row">
-                    <div class="col-sm-6">
-                        <div class="row align-items-center">
-                            <div class="col-2">
-                                <img width="80" height="80" style="opacity: 0.6;" class="img-fluid"
-                                    src="assets/images/skills/html.png" alt="">
-                            </div>
-                            <div class="col-10">
-                                <h5 id="skill-text"> HTML </h5>
-                                <div class="progress">
-                                    <div class="progress-bar progress-bar-striped progress-bar-animated"
-                                        role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
-                                        style="width: 97%;background-color: #6857ff;"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-6">
-                        <div class="row align-items-center">
-                            <div class="col-2">
-                                <img width="80" height="80" style="opacity: 0.6;" class="img-fluid"
-                                    src="assets/images/skills/xd.png" alt="">
-                            </div>
-                            <div class="col-10">
-                                <h5 id="skill-text"> Adobe XD </h5>
-                                <div class="progress">
-                                    <div class="progress-bar progress-bar-striped progress-bar-animated"
-                                        role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
-                                        style="width: 70%;background-color: #6857ff;"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <h2
+          id="sections"
+          style="
+            margin-left: 5px;
+            color: white;
+            margin-top: 0cm;
+            margin-bottom: 0cm;
+          "
+        >
+          Skills
+        </h2>
+        <div style="width: 100px; overflow: hidden">
+          <hr
+            style="
+              color: #867dd8;
+              border: 2px #867dd8 solid;
+              opacity: 1;
+              margin: 5px;
+            "
+          />
         </div>
 
+        <p
+          style="
+            margin-left: 5px;
+            color: rgb(215, 215, 215);
+            margin-top: 0cm;
+            margin-bottom: 3px;
+            font-size: 1.1rem;
+          "
+        >
+          A list of my core skills and tools
+        </p>
 
+        <br />
+        <br />
+        <br />
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="row align-items-center">
+                <div class="col-2">
+                  <img
+                    style="opacity: 0.5"
+                    width="80"
+                    height="80"
+                    class="img-fluid"
+                    src="assets/images/skills/python.png"
+                    alt=""
+                  />
+                </div>
+                <div class="col-10">
+                  <h5 id="skill-text">Python</h5>
+                  <div class="progress">
+                    <div
+                      class="progress-bar progress-bar-striped progress-bar-animated"
+                      role="progressbar"
+                      aria-valuenow="75"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                      style="width: 95%; background-color: #6857ff"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+              <div class="row align-items-center">
+                <div class="col-2">
+                  <img
+                    style="opacity: 0.6"
+                    width="80"
+                    height="80"
+                    class="img-fluid"
+                    src="assets/images/skills/linux.png"
+                    alt=""
+                  />
+                </div>
+                <div class="col-10">
+                  <h5 id="skill-text">Linux</h5>
+                  <div class="progress">
+                    <div
+                      class="progress-bar progress-bar-striped progress-bar-animated"
+                      role="progressbar"
+                      aria-valuenow="75"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                      style="width: 40%; background-color: #6857ff"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <br />
+          <br />
+
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="row align-items-center">
+                <div class="col-2">
+                  <img
+                    style="opacity: 0.5"
+                    width="80"
+                    height="80"
+                    class="img-fluid"
+                    src="assets/images/skills/bootstrap.png"
+                    alt=""
+                  />
+                </div>
+                <div class="col-10">
+                  <h5 id="skill-text">Bootstrap</h5>
+                  <div class="progress">
+                    <div
+                      class="progress-bar progress-bar-striped progress-bar-animated"
+                      role="progressbar"
+                      aria-valuenow="75"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                      style="width: 95%; background-color: #6857ff"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+              <div class="row align-items-center">
+                <div class="col-2">
+                  <img
+                    style="opacity: 0.6"
+                    width="80"
+                    height="80"
+                    class="img-fluid"
+                    src="assets/images/skills/css-3.png"
+                    alt=""
+                  />
+                </div>
+                <div class="col-10">
+                  <h5 id="skill-text">CSS</h5>
+                  <div class="progress">
+                    <div
+                      class="progress-bar progress-bar-striped progress-bar-animated"
+                      role="progressbar"
+                      aria-valuenow="75"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                      style="width: 70%; background-color: #6857ff"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <br />
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="row align-items-center">
+                <div class="col-2">
+                  <img
+                    style="opacity: 0.6"
+                    width="80"
+                    height="80"
+                    class="img-fluid"
+                    src="assets/images/skills/django.png"
+                    alt=""
+                  />
+                </div>
+                <div class="col-10">
+                  <h5 id="skill-text">Django</h5>
+                  <div class="progress">
+                    <div
+                      class="progress-bar progress-bar-striped progress-bar-animated"
+                      role="progressbar"
+                      aria-valuenow="75"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                      style="width: 85%; background-color: #6857ff"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+              <div class="row align-items-center">
+                <div class="col-2">
+                  <img
+                    style="opacity: 0.6"
+                    width="80"
+                    height="80"
+                    class="img-fluid"
+                    src="assets/images/skills/github.png"
+                    alt=""
+                  />
+                </div>
+                <div class="col-10">
+                  <h5 id="skill-text">Github</h5>
+                  <div class="progress">
+                    <div
+                      class="progress-bar progress-bar-striped progress-bar-animated"
+                      role="progressbar"
+                      aria-valuenow="75"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                      style="width: 85%; background-color: #6857ff"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br />
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="row align-items-center">
+                <div class="col-2">
+                  <img
+                    style="opacity: 0.6"
+                    width="80"
+                    height="80"
+                    class="img-fluid"
+                    src="assets/images/skills/photoshop.png"
+                    alt=""
+                  />
+                </div>
+                <div class="col-10">
+                  <h5 id="skill-text">Adobe Photoshop</h5>
+                  <div class="progress">
+                    <div
+                      class="progress-bar progress-bar-striped progress-bar-animated"
+                      role="progressbar"
+                      aria-valuenow="75"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                      style="width: 70%; background-color: #6857ff"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+              <div class="row align-items-center">
+                <div class="col-2">
+                  <img
+                    width="80"
+                    height="80"
+                    style="opacity: 0.6"
+                    class="img-fluid"
+                    src="assets/images/skills/java-script.png"
+                    alt=""
+                  />
+                </div>
+                <div class="col-10">
+                  <h5 id="skill-text">Javascript</h5>
+                  <div class="progress">
+                    <div
+                      class="progress-bar progress-bar-striped progress-bar-animated"
+                      role="progressbar"
+                      aria-valuenow="75"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                      style="width: 60%; background-color: #6857ff"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br />
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="row align-items-center">
+                <div class="col-2">
+                  <img
+                    width="80"
+                    height="80"
+                    style="opacity: 0.6"
+                    class="img-fluid"
+                    src="assets/images/skills/html.png"
+                    alt=""
+                  />
+                </div>
+                <div class="col-10">
+                  <h5 id="skill-text">HTML</h5>
+                  <div class="progress">
+                    <div
+                      class="progress-bar progress-bar-striped progress-bar-animated"
+                      role="progressbar"
+                      aria-valuenow="75"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                      style="width: 97%; background-color: #6857ff"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+              <div class="row align-items-center">
+                <div class="col-2">
+                  <img
+                    width="80"
+                    height="80"
+                    style="opacity: 0.6"
+                    class="img-fluid"
+                    src="assets/images/skills/xd.png"
+                    alt=""
+                  />
+                </div>
+                <div class="col-10">
+                  <h5 id="skill-text">Adobe XD</h5>
+                  <div class="progress">
+                    <div
+                      class="progress-bar progress-bar-striped progress-bar-animated"
+                      role="progressbar"
+                      aria-valuenow="75"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                      style="width: 70%; background-color: #6857ff"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-
 
     <!-- ###################################################    Projects Section ########################################## -->
 
     <section id="projects-section">
-        <div class="container">
-            <h2 id="sections" style="margin-left: 5px;color: white;margin-top: 0cm;margin-bottom: 0cm;"> Projects</h2>
-            <div style="width:100px;overflow:hidden">
-                <hr style="color:#867DD8;border: 2px  #867DD8 solid ; opacity: 1;margin:5px ">
-            </div>
-
-            <p style="margin-left: 5px;color:rgb(215, 215, 215);margin-top: 0cm;margin-bottom: 3px;font-size:1.1rem;">
-                Some of my past projects
-            </p>
-
-
-            <br>
-            <br>
-            <br>
-
-
-            <div class="container">
-                <div class="row project-container">
-                    <div class="col-md-6">
-                        <img id="project-img" class="img-fluid" src="assets/images/projects/640x360.png" alt="">
-                    </div>
-                    <div class="col-md-6">
-                        <div class="project-text-container">
-                            <h2 id="sections" style="margin-left: 5px;color: white;margin-top: 0cm;margin-bottom: 0cm;">
-                                Project 1</h2>
-                            <div style="width:100px;overflow:hidden;margin-top: 8px;">
-                                <hr style="color:#867DD8;border: 3px  #867DD8 solid ; opacity: 1;margin:5px ">
-                            </div>
-
-                            <div class="stack">
-
-                                <img id="stack-img" src="assets/images/skills/bootstrap.png" alt="">
-                                <img id="stack-img" src="assets/images/skills/html.png" alt="">
-                                <img id="stack-img" src="assets/images/skills/java-script.png" alt="">
-                                <img id="stack-img" src="assets/images/skills/css-3.png" alt="">
-
-                            </div>
-
-                            <br>
-
-                            <p id="project-description">
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae, voluptatem.
-                                Possimus blanditiis distinctio dolore itaque quasi
-                            </p>
-
-                            <div class="project-links">
-                                <a id="project-link" class="btn btn-lg" href="#"> Live &nbsp; <i
-                                        class="bi bi-box-arrow-up-right"></i> </a>
-                                &nbsp;&nbsp;&nbsp;
-                                <a id="project-link" class="btn btn-lg" href="#"> Source &nbsp; <i
-                                        class="bi bi-github"></i> </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <br><br>
-                <div class="row project-container">
-                    <div class="col-md-6">
-                        <img id="project-img" class="img-fluid" src="assets/images/projects/640x360.png" alt="">
-                    </div>
-                    <div class="col-md-6">
-                        <div class="project-text-container">
-                            <h2 id="sections" style="margin-left: 5px;color: white;margin-top: 0cm;margin-bottom: 0cm;">
-                                Project 2</h2>
-                            <div style="width:100px;overflow:hidden;margin-top: 8px;">
-                                <hr style="color:#867DD8;border: 3px  #867DD8 solid ; opacity: 1;margin:5px ">
-                            </div>
-
-                            <div class="stack">
-
-                                <img id="stack-img" src="assets/images/skills/bootstrap.png" alt="">
-                                <img id="stack-img" src="assets/images/skills/html.png" alt="">
-                                <img id="stack-img" src="assets/images/skills/java-script.png" alt="">
-                                <img id="stack-img" src="assets/images/skills/css-3.png" alt="">
-
-                            </div>
-
-                            <br>
-
-                            <p id="project-description">
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae, voluptatem.
-                                Possimus blanditiis distinctio dolore itaque quasi
-                            </p>
-
-                            <div class="project-links">
-                                <a id="project-link" class="btn btn-lg" href="#"> Live &nbsp; <i
-                                        class="bi bi-box-arrow-up-right"></i> </a>
-                                &nbsp;&nbsp;&nbsp;
-                                <a id="project-link" class="btn btn-lg" href="#"> Source &nbsp; <i
-                                        class="bi bi-github"></i> </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-            </div>
-
+      <div class="container">
+        <h2
+          id="sections"
+          style="
+            margin-left: 5px;
+            color: white;
+            margin-top: 0cm;
+            margin-bottom: 0cm;
+          "
+        >
+          Projects
+        </h2>
+        <div style="width: 100px; overflow: hidden">
+          <hr
+            style="
+              color: #867dd8;
+              border: 2px #867dd8 solid;
+              opacity: 1;
+              margin: 5px;
+            "
+          />
         </div>
+
+        <p
+          style="
+            margin-left: 5px;
+            color: rgb(215, 215, 215);
+            margin-top: 0cm;
+            margin-bottom: 3px;
+            font-size: 1.1rem;
+          "
+        >
+          Some of my past projects
+        </p>
+
+        <br />
+        <br />
+        <br />
+
+        <div class="container">
+          <div class="row project-container">
+            <div class="col-md-6">
+              <img
+                id="project-img"
+                class="img-fluid"
+                src="assets/images/projects/640x360.png"
+                alt=""
+              />
+            </div>
+            <div class="col-md-6">
+              <div class="project-text-container">
+                <h2
+                  id="sections"
+                  style="
+                    margin-left: 5px;
+                    color: white;
+                    margin-top: 0cm;
+                    margin-bottom: 0cm;
+                  "
+                >
+                  Project 1
+                </h2>
+                <div style="width: 100px; overflow: hidden; margin-top: 8px">
+                  <hr
+                    style="
+                      color: #867dd8;
+                      border: 3px #867dd8 solid;
+                      opacity: 1;
+                      margin: 5px;
+                    "
+                  />
+                </div>
+
+                <div class="stack">
+                  <img
+                    id="stack-img"
+                    src="assets/images/skills/bootstrap.png"
+                    alt=""
+                  />
+                  <img
+                    id="stack-img"
+                    src="assets/images/skills/html.png"
+                    alt=""
+                  />
+                  <img
+                    id="stack-img"
+                    src="assets/images/skills/java-script.png"
+                    alt=""
+                  />
+                  <img
+                    id="stack-img"
+                    src="assets/images/skills/css-3.png"
+                    alt=""
+                  />
+                </div>
+
+                <br />
+
+                <p id="project-description">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Recusandae, voluptatem. Possimus blanditiis distinctio dolore
+                  itaque quasi
+                </p>
+
+                <div class="project-links">
+                  <a id="project-link" class="btn btn-lg" href="#">
+                    Live &nbsp; <i class="bi bi-box-arrow-up-right"></i>
+                  </a>
+                  &nbsp;&nbsp;&nbsp;
+                  <a id="project-link" class="btn btn-lg" href="#">
+                    Source &nbsp; <i class="bi bi-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <br /><br />
+          <div class="row project-container">
+            <div class="col-md-6">
+              <img
+                id="project-img"
+                class="img-fluid"
+                src="assets/images/projects/640x360.png"
+                alt=""
+              />
+            </div>
+            <div class="col-md-6">
+              <div class="project-text-container">
+                <h2
+                  id="sections"
+                  style="
+                    margin-left: 5px;
+                    color: white;
+                    margin-top: 0cm;
+                    margin-bottom: 0cm;
+                  "
+                >
+                  Project 2
+                </h2>
+                <div style="width: 100px; overflow: hidden; margin-top: 8px">
+                  <hr
+                    style="
+                      color: #867dd8;
+                      border: 3px #867dd8 solid;
+                      opacity: 1;
+                      margin: 5px;
+                    "
+                  />
+                </div>
+
+                <div class="stack">
+                  <img
+                    id="stack-img"
+                    src="assets/images/skills/bootstrap.png"
+                    alt=""
+                  />
+                  <img
+                    id="stack-img"
+                    src="assets/images/skills/html.png"
+                    alt=""
+                  />
+                  <img
+                    id="stack-img"
+                    src="assets/images/skills/java-script.png"
+                    alt=""
+                  />
+                  <img
+                    id="stack-img"
+                    src="assets/images/skills/css-3.png"
+                    alt=""
+                  />
+                </div>
+
+                <br />
+
+                <p id="project-description">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Recusandae, voluptatem. Possimus blanditiis distinctio dolore
+                  itaque quasi
+                </p>
+
+                <div class="project-links">
+                  <a id="project-link" class="btn btn-lg" href="#">
+                    Live &nbsp; <i class="bi bi-box-arrow-up-right"></i>
+                  </a>
+                  &nbsp;&nbsp;&nbsp;
+                  <a id="project-link" class="btn btn-lg" href="#">
+                    Source &nbsp; <i class="bi bi-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-
-
 
     <!-- ###################################################    Blog Section ########################################## -->
 
     <section id="blog-section">
-        <div class="container">
-
-            <h2 style="margin-left: 5px;color: white;margin-top: 0cm;margin-bottom: 0cm;"> Blog</h2>
-            <div style="width:100px;overflow:hidden">
-                <hr style="color:#867DD8;border: 2px  #867DD8 solid ; opacity: 1;margin:5px ">
-            </div>
-
-            <p style="margin-left: 5px;color:rgb(215, 215, 215);margin-top: 0cm;margin-bottom: 3px;font-size:1.1rem;">
-                Some articles from my blog
-            </p>
+      <div class="container">
+        <h2
+          style="
+            margin-left: 5px;
+            color: white;
+            margin-top: 0cm;
+            margin-bottom: 0cm;
+          "
+        >
+          Blog
+        </h2>
+        <div style="width: 100px; overflow: hidden">
+          <hr
+            style="
+              color: #867dd8;
+              border: 2px #867dd8 solid;
+              opacity: 1;
+              margin: 5px;
+            "
+          />
         </div>
-        <br><br>
 
+        <p
+          style="
+            margin-left: 5px;
+            color: rgb(215, 215, 215);
+            margin-top: 0cm;
+            margin-bottom: 3px;
+            font-size: 1.1rem;
+          "
+        >
+          Some articles from my blog
+        </p>
+      </div>
+      <br /><br />
 
-        <div class="row d-flex justify-content-center">
+      <div class="row d-flex justify-content-center">
+        <div class="col-12 col-md-10 col-lg-9">
+          <div
+            class="d-flex"
+            style="
+              border-top: 1px solid rgba(200, 200, 200, 0.126);
+              border-bottom: 1px solid rgba(200, 200, 200, 0.126);
+            "
+          >
+            <div
+              class="d-flex"
+              style="border-bottom: 1px solid rgba(200, 200, 200, 0.126)"
+            >
+              <div class="blog-img" style="margin: 20px">
+                <img
+                  height="150"
+                  src="assets/images/projects/640x360.png"
+                  alt=""
+                />
+              </div>
+              <div class="">
+                <a href="#" class="article-link">
+                  <h3
+                    class="blog-title"
+                    style="margin-left: 2px; margin-top: 10px; color: white"
+                  >
+                    Article 1
+                  </h3>
+                </a>
+                <p
+                  style="
+                    margin-left: 2px;
+                    margin-right: 20px;
+                    margin-bottom: 8px;
+                    color: rgb(225, 225, 225);
+                    font-size: 1rem;
+                  "
+                  class="blog-subtitle"
+                >
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Eligendi, sunt perspiciatis reiciendis exercitationem
+                  voluptatum ad quaerat, quae, iusto id
+                </p>
 
-            <div class=" col-12 col-md-10 col-lg-9">
-
-                <div class="d-flex"
-                    style="border-top:1px  solid rgba(200, 200, 200, 0.126);border-bottom:1px  solid rgba(200, 200, 200, 0.126);">
-
-                    <div class="d-flex" style="border-bottom:1px  solid rgba(200, 200, 200, 0.126);">
-
-
-                        <div class="blog-img" style="margin: 20px;">
-                            <img height="150" src="assets/images/projects/640x360.png" alt="">
-                        </div>
-                        <div class="">
-                            <a href="#" class="article-link">
-                                <h3 class="blog-title" style="margin-left: 2px;margin-top:10px;color:white"> Article 1
-                                </h3>
-                            </a>
-                            <p style="margin-left: 2px;margin-right: 20px;margin-bottom: 8px;color:rgb(225, 225, 225); font-size: 1rem;"
-                                class="blog-subtitle">
-                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi, sunt perspiciatis
-                                reiciendis exercitationem voluptatum ad quaerat, quae, iusto id
-                            </p>
-
-
-                            <div class="row">
-                                <div class="col">
-                                    <p
-                                        style="font-size: 0.8rem;color:rgb(206, 206, 206);margin-left: 2px;margin-top: 3px;">
-                                        2 May 21 <span style="font-weight:700;font-size:larger"> &centerdot; </span> 3 min read
-                                    </p>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
+                <div class="row">
+                  <div class="col">
+                    <p
+                      style="
+                        font-size: 0.8rem;
+                        color: rgb(206, 206, 206);
+                        margin-left: 2px;
+                        margin-top: 3px;
+                      "
+                    >
+                      2 May 21
+                      <span style="font-weight: 700; font-size: larger">
+                        &centerdot;
+                      </span>
+                      3 min read
+                    </p>
+                  </div>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
-
-
+      </div>
     </section>
 
-
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
-</body>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

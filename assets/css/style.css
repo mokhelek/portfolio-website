@@ -8,6 +8,9 @@
   
 
 
+#nav-container{
+    width:100% !important;
+}
 
 body{
     background-color: var(--dark) ;
@@ -16,6 +19,9 @@ body{
 h1{
     color: var(--white);
 }
+
+
+/* #####################################################   Intro Section  ################################################ */
 
 #my-name{
     font-size: 4rem;
@@ -50,6 +56,18 @@ h1{
 #hero-image{
     width: 600px !important ;
     height: auto ;
+}
+
+@media screen and (max-width:480px) {
+    #my-name{
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (min-width:481px) {
+    #my-name{
+        font-size: 2.8rem;
+    }
 }
 
 
@@ -93,7 +111,7 @@ h1{
     width:2rem;
     margin-right:1rem;
     margin-top: 1rem;
-    opacity: 0.5;
+    color:#e3e3e3 !important;
 }
 
 .project-links{
