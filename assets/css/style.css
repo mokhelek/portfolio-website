@@ -7,9 +7,22 @@
   }
   
 
+@media screen and (max-width:540px) {
+    #nav-container{
+        width:100% !important;
+    }
+    #media-icons a{
+        color: var(--purple);
+        font-size: 1.5rem;
+        margin-right: 15px;
+    }
+    
+}
 
-#nav-container{
-    width:100% !important;
+#media-icons a{
+    color: var(--purple);
+    font-size: 1.7rem;
+    margin-right: 20px;
 }
 
 body{
