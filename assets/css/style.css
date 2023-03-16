@@ -168,7 +168,7 @@ h1 {
 #blog-section {
   margin-top: 4rem;
   background-color: var(--dark);
-  height: 600px;
+  height: 100%;
 }
 .blog-img img{
     width:210px;
